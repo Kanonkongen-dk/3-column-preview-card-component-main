@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+body {
+    background-color: var(--clr-neutral-200);
+    padding: 4.6875rem 0;
+}
+
+main {
+    @include mq(medium) {
+        display: flex;
+    }
+}
+
+ul.showcases {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include mq(medium) {
+        flex-direction: row;
+        margin: auto;
+    }
+}
